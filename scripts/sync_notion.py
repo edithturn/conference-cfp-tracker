@@ -513,7 +513,7 @@ def reconcile_missing(current_url_keys: set[str], dry_run: bool, rps: float, arc
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Sync JSON events to Notion database (upsert by External ID).")
-    parser.add_argument("--db", default="data/percona_events.json", help="Path to JSON DB file")
+    parser.add_argument("--db", default="data/events.json", help="Path to JSON DB file")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of events to process")
     parser.add_argument("--dry-run", action="store_true", help="Print intended actions without calling Notion API")
     parser.add_argument("--rps", type=float, default=2.5, help="Requests per second throttle (<= 3 recommended)")
