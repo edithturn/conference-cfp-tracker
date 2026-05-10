@@ -3,7 +3,7 @@ import argparse
 from scripts.fetch_data import fetch_and_clean
 from scripts.merge_diff import merge_and_save, load_db
 
-DB_PATH = "data/percona_events.json"
+DB_PATH = "data/events.json"
 
 def to_date_str(ts):
     """Convert epoch ms (int) or ISO-like string to YYYY-MM-DD for preview output."""
